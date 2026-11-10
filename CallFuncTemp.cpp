@@ -1,0 +1,18 @@
+#include<stdio.h>
+void swap(int *a, int *b)
+{
+	int temp;
+	
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+int main()
+{
+	int x = 10, y = 20;
+	swap(&x, &y);
+	printf("X = %d\n", x);
+	printf("Y = %d\n", y);
+	return 0;
+}
